@@ -37,7 +37,7 @@ export default createStore({
     chats : [
       {
         name : "Ariana",
-        message : "I love You 😇🤗😘 , Tu es fort au 🍑🍆 🤤 🔥...",
+        message : "I love You 😇🤗😘 , Tu es 🤤 🔥...",
         time : "12:20"
       },
       {
