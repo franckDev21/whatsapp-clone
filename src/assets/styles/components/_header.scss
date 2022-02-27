@@ -41,6 +41,11 @@
         position: relative;
         font-weight: bold;
         top: 0.2rem;
+        left: .8rem;
+        width: 70%;
+        @media screen and (max-width: 323px) {
+          left: .3rem;
+        }
       }
   
       & > .icons{
@@ -51,19 +56,20 @@
         & > img{
           width: 2rem;
           height: 2rem;
-          margin-left: 1.4rem;
+          margin-left: 1.2rem;
         }
         & .video{
           width: 2.6rem;
           height: 2.6rem;
         }
         & .phone{
-          margin-left: 2rem;
+          margin-left: 1.2rem;
         }
   
         & .menu{
           width: 2.4rem;
           height: 2.4rem;
+          margin-left: 1.2rem;
         }
   
       }

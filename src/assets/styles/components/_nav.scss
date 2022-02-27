@@ -33,6 +33,7 @@
     & > li:first-of-type {
       display: flex;
       align-items: center;
+      position: relative;
       a::after{
         display: inline-block;
         content: '1';
