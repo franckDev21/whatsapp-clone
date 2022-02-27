@@ -1,0 +1,83 @@
+.nav{
+  margin-top: 1.5rem;
+  padding: 0 .8rem;
+  padding-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $colour-secondary;
+  color: $colour-white;
+
+  &--fixed{
+    position :fixed;
+    z-index: 5;
+    width: 100%;
+    top: -2rem;
+    padding-top: 3rem;
+  }
+
+  & .camera-img{
+    width: 3rem;
+    height: 3rem;
+    opacity: .6;
+  }
+
+  & > ul{
+    // background-color: aqua;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 5rem);
+    justify-content: space-between;
+
+    // pour le nombre de disc
+    & > li:first-of-type {
+      display: flex;
+      align-items: center;
+      a::after{
+        display: inline-block;
+        content: '1';
+        padding: 0 .5rem;
+        width: auto;
+        font-size: 1.2rem;
+        height: auto;
+        border-radius: 50%;
+        color: $colour-secondary;
+        background-color: $colour-white;
+        right: 0;
+        position: relative;
+        right: -1rem;
+        top: -.2rem;
+      }
+    }
+  }
+  
+  &__link{
+    text-align: center;
+    // background-color: red;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    & > a{
+      display: inline-block;
+      padding: 0 2rem;
+      letter-spacing: .08rem;
+      opacity: .6;
+
+      &.router-link-exact-active{
+        opacity:1;
+        position: relative;
+        &::before{
+          content: '';
+          display: inline-block;
+          width: 100%;
+          height: .3rem;
+          background-color: $colour-white;
+          border-radius: 5px;
+          position: absolute;
+          bottom: -.7rem;
+          left: 0;
+        }
+      }
+    }
+  }
+}

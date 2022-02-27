@@ -1,0 +1,15 @@
+.circle{
+  position: fixed;
+  width: 5.8rem;
+  height: 5.8rem;
+  background-color: $colour-secondary;
+  border-radius: 50%;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

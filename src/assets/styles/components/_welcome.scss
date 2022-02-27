@@ -1,0 +1,55 @@
+.welcome{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $colour-white;
+  z-index: 2;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__logo{
+    display: inline-block;
+    position: relative;
+    bottom: 4rem;
+    width: 10rem;
+  }
+
+  &__footer{
+    position: absolute;
+    bottom: 4rem;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+
+    .from{
+      font-size: 1.5rem;
+      color: $colour-back-2;
+      text-transform: lowercase;
+      letter-spacing: .08rem;
+    }
+
+    .meta{
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: capitalize;
+      color: $colour-primary;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > img{
+        height: 3rem;
+        margin-right: .5rem;
+      }
+      & > span{
+        margin-left: .5rem;
+      }
+    }
+  }
+}

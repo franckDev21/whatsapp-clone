@@ -1,0 +1,69 @@
+.message{
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  padding: 1.7rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 7rem;
+
+  & .chat{
+    background-color: $colour-white;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+    box-shadow: 1px 1px 5px #ccc ;
+    padding-bottom: 2.2rem;
+    position: relative;
+
+    & > img{
+      position: absolute;
+      top: -1.04rem;
+      left: -1.8rem;
+      z-index: 1;
+    }
+
+    &--you{
+      justify-self: flex-end;
+      align-self: flex-end;
+      &  img{
+        position: absolute;
+        top: -1.04rem;
+        right: -1.8rem !important;
+        left: initial;
+      }
+      color: $colour-back-1;
+      background-color: lighten($color: $colour-primary, $amount: 25);
+    }
+
+    &__name{
+      font-size: 1.6rem;
+      color: $red-name;
+    }
+    &__message{
+      position: relative;
+      font-size: 1.5rem;
+      z-index: 5;
+      // background-color: red;
+      padding: 1rem;
+    }
+    max-width: 70%;
+    width: auto;
+
+    &__time{
+      font-size: 1.3rem;
+      color: lighten($color: $colour-back-2, $amount: 10);
+      position: absolute;
+      right: 5px;
+      bottom: 2px;
+    }
+    
+  }
+}
