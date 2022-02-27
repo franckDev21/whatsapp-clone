@@ -44,9 +44,9 @@
         color: $colour-secondary;
         background-color: $colour-white;
         right: 0;
-        position: relative;
-        right: -1rem;
-        top: -.2rem;
+        position: absolute;
+        right: 0rem;
+        top: 0rem;
       }
     }
   }

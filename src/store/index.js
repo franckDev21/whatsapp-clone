@@ -74,28 +74,28 @@ export default createStore({
       {
         name : "Clara", 
         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafWQIZzrZ7rUXOfU4nz-kosFYQdqU2pFdrQ&usqp=CAU",
-        message : "Lorem ipsum dolor consectetur...",
+        message : "Lorem ipsum dolor ..",
         time : "23/02/2022",
         count : 1
       },
       {
         name : "Derulo", 
         image:"https://img.nrj.fr/4tlIxJY07ymsgvc6fCB_YT7tNdA=/800x450/smart/medias%2F2020%2F10%2Fderulo_5f91b1167ea67.jpg",
-        message : "Lorem ipsum dolor consectetur...",
+        message : "Lorem ipsum consectetur..",
         time : "23/02/2022",
         count : 0
       },
       {
         name : "Joyce Bb2 ~ ❤", 
         image:"https://i.pinimg.com/originals/1e/76/0b/1e760b6e7b2fce60eb3e5dd08931bc31.jpg",
-        message : "🤣🤣ipsum dolor consectetur😘..",
+        message : "🤣🤣 consectetur😘..",
         time : "23/02/2022",
         count : 3
       },
       {
         name : "Chris", 
         image:"https://i0.wp.com/www.starmag.com/wp-content/uploads/2022/01/chris-brown-une-femme-laccuse-de-lavoir-droguee-et-violee-lors-dune-soiree.jpg?resize=1200%2C900&ssl=1",
-        message : "Lorem ipsum dolor consectetur...",
+        message : "Lorem buy consectetur...",
         time : "23/02/2022",
         count : 0
       },
