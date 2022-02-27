@@ -32,7 +32,7 @@ export default {
   mounted(){
     setTimeout(()=>{
       this.setLoad(true)
-    },2000);
+    },7000);
     this.setCurrentPage('disc')
   },
   computed: {
@@ -43,7 +43,7 @@ export default {
     hiddenWelcome(){
       setTimeout(()=>{
         this.show = false
-      },1000);
+      },6000);
     }
   }
 }
