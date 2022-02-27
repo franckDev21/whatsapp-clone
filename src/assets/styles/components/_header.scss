@@ -19,8 +19,8 @@
       // background: green;
       display: inline-block;
       & > img{
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         position: relative;
         top: 0.25rem;
         // background: #000;
@@ -34,6 +34,8 @@
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
+        position: relative;
+        left: -1rem;
       }
       & > .name{
         // background-color: blue;
@@ -63,7 +65,7 @@
           height: 2.6rem;
         }
         & .phone{
-          margin-left: 1.2rem;
+          margin-left: 1.4rem;
         }
   
         & .menu{

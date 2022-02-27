@@ -19,7 +19,7 @@
       <img src="@/assets/icons/left2.svg" alt="">
     </router-link>
     <div class="header__right" v-if="headerType == 'message'">
-      <img src="https://static1.purepeople.com/articles/6/38/89/76/@/5595578-ariana-grande-62eme-soiree-annuelle-de-624x600-1.jpg"  alt="">
+      <img src="@/assets/img/img-4.jpg"  alt="">
       <span class="name">Ariana G</span>
       <div class="icons">
         <img class="video" src="@/assets/icons/video_call2.svg" alt="">

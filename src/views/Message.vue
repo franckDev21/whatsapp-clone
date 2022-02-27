@@ -15,7 +15,18 @@
       <div class="chat__message">{{ msg.message }}</div>
       <span class="chat__time">{{msg.time}}</span>
     </div>
-
+    
+    <div class="message__footer">
+      <form>
+        <img src="@/assets/icons/happy3.svg" alt="">
+        <textarea rows="1" placeholder="Message..."></textarea>
+        <img src="@/assets/icons/attach.svg" alt="">
+        <img src="@/assets/icons/camera_3.svg" alt="">
+      </form>
+      <div class="voice">
+        <img src="@/assets/icons/microphone.svg">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -27,9 +38,10 @@ export default {
   computed : mapGetters(['chats']),
   created(){
     this.setHeaderType('message')
+    this.setShowBtn(false)
   },
   methods : {
-    ...mapActions(['setHeaderType'])
+    ...mapActions(['setHeaderType','setShowBtn'])
   }
 }
 </script>

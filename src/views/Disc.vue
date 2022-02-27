@@ -34,12 +34,13 @@ export default {
       this.setLoad(true)
     },7000);
     this.setCurrentPage('disc')
+    this.setShowBtn(true)
   },
   computed: {
     ...mapGetters(['load','allMessage'])
   },
   methods: {
-    ...mapActions(['setLoad','setCurrentPage','setHeaderType']),
+    ...mapActions(['setLoad','setCurrentPage','setHeaderType','setShowBtn']),
     hiddenWelcome(){
       setTimeout(()=>{
         this.show = false

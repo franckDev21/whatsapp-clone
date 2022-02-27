@@ -3,6 +3,7 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     load : false,
+    showBtn : true,
     headerType : 'home',
     currentPage : {
       count : null,
@@ -35,6 +36,66 @@ export default createStore({
       }
     },
     chats : [
+      {
+        name : "Ariana",
+        message : "I love You 😇🤗😘 , Tu es 🤤 🔥...",
+        time : "12:20"
+      },
+      {
+        name : "You",
+        message : "Je vois ! 😏 Demain je  ...  ",
+        time : "12:21"
+      },
+      {
+        name : "Ariana",
+        message : "Je viens encore demain b ?",
+        time : "12:20"
+      },
+      {
+        name : "You",
+        message : "Mais demain je  ...  🙃 ",
+        time : "12:21"
+      },
+      {
+        name : "Ariana",
+        message : "I love You 😇🤗😘 , Tu es 🤤 🔥...",
+        time : "12:20"
+      },
+      {
+        name : "You",
+        message : "Je vois ! 😏 Demain je  ...  ",
+        time : "12:21"
+      },
+      {
+        name : "Ariana",
+        message : "Je viens encore demain b ?",
+        time : "12:20"
+      },
+      {
+        name : "You",
+        message : "Mais demain je  ...  🙃 ",
+        time : "12:21"
+      },
+      {
+        name : "Ariana",
+        message : "I love You 😇🤗😘 , Tu es 🤤 🔥...",
+        time : "12:20"
+      },
+      {
+        name : "You",
+        message : "Je vois ! 😏 Demain je  ...  ",
+        time : "12:21"
+      },
+      {
+        name : "Ariana",
+        message : "Je viens encore demain b ?",
+        time : "12:20"
+      },
+      {
+        name : "You",
+        message : "Mais demain je  ...  🙃 ",
+        time : "12:21"
+      },
       {
         name : "Ariana",
         message : "I love You 😇🤗😘 , Tu es 🤤 🔥...",
@@ -118,19 +179,22 @@ export default createStore({
   mutations: {
     SET_LOAD : (state,value) => state.load = value,
     SET_CURRENT_PAGE : (state,value) => state.currentPage = state.pageInfos[value],
-    SET_HEADER_TYPE: (state,type) => state.headerType = type
+    SET_HEADER_TYPE: (state,type) => state.headerType = type,
+    SET_SHOW_BTN : (state,type) => state.showBtn = type
   },
   actions: {
     setLoad : ({commit},value) => commit('SET_LOAD',value),
     setCurrentPage : ({commit},name) => commit('SET_CURRENT_PAGE',name),
-    setHeaderType : ({commit},type)=> commit('SET_HEADER_TYPE',type)
+    setHeaderType : ({commit},type)=> commit('SET_HEADER_TYPE',type),
+    setShowBtn : ({commit},type) => commit('SET_SHOW_BTN',type)
   },
   getters: {
     currentPage : state => state.currentPage,
     load : state => state.load,
     headerType : state => state.headerType,
     chats : state => state.chats,
-    allMessage : state => state.allMessage
+    allMessage : state => state.allMessage,
+    showBtn : state => state.showBtn
   },
   modules: {
   }

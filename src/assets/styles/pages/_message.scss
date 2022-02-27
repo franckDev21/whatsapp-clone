@@ -9,18 +9,20 @@
   right: 0;
   bottom: 0;
   z-index: 1;
+  overflow-y: scroll;
 
   display: flex;
   flex-direction: column;
 
   padding-top: 8rem;
+  padding-bottom: 5rem;
 
   & .chat{
     background-color: $colour-white;
     margin-bottom: 1rem;
-    border-radius: .4rem;
+    border-radius: .6rem;
     box-shadow: 1px 1px 5px #ccc ;
-    padding-bottom: 2.2rem;
+    padding-bottom: 1.5rem;
     position: relative;
 
     & > img{
@@ -66,5 +68,69 @@
       bottom: 2px;
     }
     
+  }
+
+  &__footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem .8rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    align-items: center;
+
+    form{
+      background-color: $colour-white;
+      display: flex;
+      align-items: flex-end;
+      padding: 0.4rem .9rem;
+      border-radius: 2rem;
+      height: auto;
+      width: calc(100% - 5rem);
+      justify-content: space-between;
+      box-shadow: 1px 1px 5px lighten($color: $colour-back-2, $amount: 20) ;
+
+      textarea{
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        width: 60%;
+        border: none;
+        outline: none;
+      }
+      & img:first-of-type{
+        width: 2.6rem;
+        height: 2.6rem;
+        position: relative;
+        bottom: 0.28rem;
+      }
+      & img:nth-child(3){
+        width: 2.8rem;
+        height: 2.8rem;
+        transform: rotate(-35deg);
+        margin-right: 1rem;
+      }
+      & img:last-of-type{
+        width: 2.6rem;
+        height: 2.6rem;
+        position: relative;
+        bottom: 0.19rem;
+        right: 0.2rem;
+      }
+    }
+
+    & > .voice{
+      background-color: $colour-secondary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .7rem;
+      border-radius: 50%;
+      img{
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
   }
 }

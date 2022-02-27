@@ -1,20 +1,21 @@
 <template>
   <layout>
-    <template #header>
+    <template #header >
       <Header />
     </template>
-    <template #content>
+    <template #content >
       <div class="content">
         <router-view/>
       </div>
     </template>
-    <template #button-static>
-      <Circle/> 
+    <template #button-static >
+      <Circle v-if="showBtn" /> 
     </template>
   </layout>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 
 import Layout from './components/Layout.vue'
 import Header from './components/Header.vue'
@@ -25,14 +26,14 @@ export default {
     Layout,
     Header,
     Circle
-  }
+  },
+  computed : mapGetters(['showBtn'])
 }
 </script>
 
 <style lang="scss">
   @import "@/assets/styles/main.scss";
   .nav {
-
     a {
       font-weight: bold;
     }
