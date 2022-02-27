@@ -39,9 +39,10 @@
 
     &__title{
       position: relative;
-      bottom: .4rem;
-      font-size: 2rem;
-      color: lighten($color: $colour-back-1, $amount: 10);
+      bottom: .5rem;
+      font-size: 1.8rem;
+      color: lighten($color: $colour-back-1, $amount: 20);
+      font-weight: 600;
     }
 
     &__message{
@@ -50,11 +51,13 @@
       color: lighten($color: $colour-back-2, $amount: 10);
       font-size: 1.5rem;
       opacity: .7;
+      font-weight: 400;
     }
 
     &__date{
       font-size: 1.3rem;
       position: absolute;
+      font-weight: bold;
       right: 0;
       top: 2.5px;
       letter-spacing: .5px;
@@ -74,7 +77,8 @@
       right: .2rem;
       line-height: 2rem;
       text-align: center;
-      color: $colour-white
+      color: $colour-white;
+      font-weight: bold;
     }
   }
 }

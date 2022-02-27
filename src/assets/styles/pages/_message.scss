@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
 
-  padding-top: 7rem;
+  padding-top: 8rem;
 
   & .chat{
     background-color: $colour-white;
@@ -44,7 +44,7 @@
     }
 
     &__name{
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       color: $red-name;
     }
     &__message{
@@ -53,6 +53,7 @@
       z-index: 5;
       // background-color: red;
       padding: 1rem;
+      font-weight: 400;
     }
     max-width: 70%;
     width: auto;
