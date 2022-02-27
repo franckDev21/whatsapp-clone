@@ -103,19 +103,21 @@
         width: 2.6rem;
         height: 2.6rem;
         position: relative;
-        bottom: 0.28rem;
+        bottom: 0.37rem;
       }
       & img:nth-child(3){
         width: 2.8rem;
         height: 2.8rem;
         transform: rotate(-35deg);
         margin-right: 1rem;
+        position: relative;
+        bottom: 0.34rem;
       }
       & img:last-of-type{
         width: 2.6rem;
         height: 2.6rem;
         position: relative;
-        bottom: 0.19rem;
+        bottom: 0.34rem;
         right: 0.2rem;
       }
     }

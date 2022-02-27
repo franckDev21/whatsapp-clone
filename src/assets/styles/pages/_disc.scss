@@ -16,6 +16,7 @@
     margin-bottom: 2rem;
 
     &__rigth{
+      display: block;
       margin-left: 1rem;
       width: calc(100% - 6rem);
     }
@@ -39,7 +40,7 @@
 
     &__title{
       position: relative;
-      bottom: .5rem;
+      bottom: .3rem;
       font-size: 1.8rem;
       color: lighten($color: $colour-back-1, $amount: 15);
       font-weight: 600;
@@ -47,7 +48,7 @@
 
     &__message{
       position: relative;
-      bottom: .8rem;
+      bottom: .6rem;
       color: lighten($color: $colour-back-2, $amount: 10);
       font-size: 1.5rem;
       opacity: .7;

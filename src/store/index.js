@@ -61,61 +61,6 @@ export default createStore({
         message : "I love You 😇🤗😘 , Tu es 🤤 🔥...",
         time : "12:20"
       },
-      {
-        name : "You",
-        message : "Je vois ! 😏 Demain je  ...  ",
-        time : "12:21"
-      },
-      {
-        name : "Ariana",
-        message : "Je viens encore demain b ?",
-        time : "12:20"
-      },
-      {
-        name : "You",
-        message : "Mais demain je  ...  🙃 ",
-        time : "12:21"
-      },
-      {
-        name : "Ariana",
-        message : "I love You 😇🤗😘 , Tu es 🤤 🔥...",
-        time : "12:20"
-      },
-      {
-        name : "You",
-        message : "Je vois ! 😏 Demain je  ...  ",
-        time : "12:21"
-      },
-      {
-        name : "Ariana",
-        message : "Je viens encore demain b ?",
-        time : "12:20"
-      },
-      {
-        name : "You",
-        message : "Mais demain je  ...  🙃 ",
-        time : "12:21"
-      },
-      {
-        name : "Ariana",
-        message : "I love You 😇🤗😘 , Tu es 🤤 🔥...",
-        time : "12:20"
-      },
-      {
-        name : "You",
-        message : "Je vois ! 😏 Demain je  ...  ",
-        time : "12:21"
-      },
-      {
-        name : "Ariana",
-        message : "Je viens encore demain b ?",
-        time : "12:20"
-      },
-      {
-        name : "You",
-        message : "Mais demain je  ...  🙃 ",
-        time : "12:21"
-      }
     ],
     allMessage : [
       {

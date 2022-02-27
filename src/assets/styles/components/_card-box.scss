@@ -1,0 +1,45 @@
+.card-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $colour-back-transparent;
+  z-index: 10;
+
+  &__content{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 80%;
+    min-width: 260px;
+    border-radius: .3rem;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $colour-white;
+    max-height: 320px;
+    height: 45%;
+    box-shadow: $shadow;
+  }
+
+  &__footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1.7rem;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > img{
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+}

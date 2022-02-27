@@ -23,7 +23,7 @@ export default {
   },
   components: {
     Welcome,
-    ChatList
+    ChatList,
   },
   created(){
     this.hiddenWelcome();
