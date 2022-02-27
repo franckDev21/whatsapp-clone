@@ -88,7 +88,7 @@ export default createStore({
       {
         name : "Joyce Bb2 ~ ❤", 
         image:"https://i.pinimg.com/originals/1e/76/0b/1e760b6e7b2fce60eb3e5dd08931bc31.jpg",
-        message : "😂🤣🤣 ipsum dolor consectetur 😘...",
+        message : "🤣🤣ipsum dolor consectetur😘..",
         time : "23/02/2022",
         count : 3
       },
