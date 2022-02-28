@@ -39,9 +39,10 @@ export default {
   created(){
     this.setHeaderType('message')
     this.setShowBtn(false)
+    this.setShowBtnPen(false)
   },
   methods : {
-    ...mapActions(['setHeaderType','setShowBtn'])
+    ...mapActions(['setHeaderType','setShowBtn','setShowBtnPen'])
   }
 }
 </script>

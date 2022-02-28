@@ -4,6 +4,7 @@ export default createStore({
   state: {
     load : false,
     showBtn : true,
+    showBtnPen : true,
     showCardBox : false,
     headerType : 'home',
 
@@ -132,7 +133,8 @@ export default createStore({
     SET_LOAD : (state,value) => state.load = value,
     SET_CURRENT_PAGE : (state,value) => state.currentPage = state.pageInfos[value],
     SET_HEADER_TYPE: (state,type) => state.headerType = type,
-    SET_SHOW_BTN : (state,type) => state.showBtn = type,
+    SET_SHOW_BTN : (state,value) => state.showBtn = value,
+    SET_SHOW_BTN_PEN : (state,value) => state.showBtnPen = value,
     SET_SHOW_CARD_BOX : (state,value) => state.showCardBox = value,
     SET_CARD_BOX_DATA : (state,data) => state.cardBoxData = data
   },
@@ -140,7 +142,8 @@ export default createStore({
     setLoad : ({commit},value) => commit('SET_LOAD',value),
     setCurrentPage : ({commit},name) => commit('SET_CURRENT_PAGE',name),
     setHeaderType : ({commit},type)=> commit('SET_HEADER_TYPE',type),
-    setShowBtn : ({commit},type) => commit('SET_SHOW_BTN',type),
+    setShowBtn : ({commit},value) => commit('SET_SHOW_BTN',value),
+    setShowBtnPen : ({commit},value) => commit('SET_SHOW_BTN_PEN',value),
     setShowCardBox : ({commit},value) => commit('SET_SHOW_CARD_BOX',value),
     setCardBoxData : ({commit},data) => commit('SET_CARD_BOX_DATA',data)
   },
@@ -151,6 +154,7 @@ export default createStore({
     chats : state => state.chats,
     allMessage : state => state.allMessage,
     showBtn : state => state.showBtn,
+    showBtnPen : state => state.showBtnPen,
     cardBoxData : state => state.cardBoxData,
     showCardBox : state => state.showCardBox
   },

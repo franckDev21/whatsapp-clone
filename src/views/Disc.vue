@@ -29,6 +29,7 @@ export default {
   created(){
     this.hiddenWelcome();
     this.setHeaderType("home");
+    this.setShowBtnPen(false)
   },
   mounted(){
     setTimeout(()=>{
@@ -48,6 +49,7 @@ export default {
         'setCurrentPage',
         'setHeaderType',
         'setShowBtn',
+        'setShowBtnPen',
         'setCardBoxData',
         'setShowCardBox'
       ]),

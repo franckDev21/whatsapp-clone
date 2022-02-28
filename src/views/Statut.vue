@@ -67,10 +67,11 @@ export default {
     CardList
   },
   mounted(){
-    this.setCurrentPage('statut')
+    this.setCurrentPage('statut');
+    this.setShowBtnPen(true);
   },
   methods: {
-    ...mapActions(['setCurrentPage'])
+    ...mapActions(['setCurrentPage','setShowBtnPen'])
   },
 }
 </script>

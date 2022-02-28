@@ -12,9 +12,10 @@ export default {
   name : 'Appel',
   mounted(){
     this.setCurrentPage('appel');
+    this.setShowBtnPen(false)
   },
   methods: {
-    ...mapActions(['setCurrentPage'])
+    ...mapActions(['setCurrentPage','setShowBtnPen'])
   },
 };
 

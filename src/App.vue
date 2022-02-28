@@ -14,7 +14,7 @@
     </template>
     <template #button-static >
       <Circle v-if="showBtn" /> 
-      <CirclePen />
+      <CirclePen v-if="showBtnPen" />
     </template>
   </layout>
 </template>
@@ -37,7 +37,7 @@ export default {
     CardBox,
     CirclePen
   },
-  computed : mapGetters(['showBtn','showCardBox','cardBoxData'])
+  computed : mapGetters(['showBtn','showCardBox','cardBoxData','showBtnPen'])
 }
 </script>
 
