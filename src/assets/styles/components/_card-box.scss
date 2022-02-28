@@ -9,21 +9,37 @@
   background-color: $colour-back-transparent;
   z-index: 10;
 
+  &__name{
+    position: absolute;
+    padding: .8rem 1rem ;
+    background-color: lighten($colour-back-transparent, 10);
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    color: $colour-white;
+  }
+
   &__content{
     position: absolute;
-    background-position: center;
-    background-size: cover;
     position: absolute;
     width: 80%;
-    min-width: 260px;
+    max-width: 260px;
     border-radius: .3rem;
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: $colour-white;
-    max-height: 320px;
-    height: 45%;
+    height: 300px;
     box-shadow: $shadow;
+  }
+
+  &__img{
+    width: 100%;
+    max-height: 250px;
+    height: 246px;
+    background-position: center;
+    background-size: cover;
   }
 
   &__footer{
@@ -31,7 +47,6 @@
     bottom: 0;
     width: 100%;
     padding: 1.7rem;
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;

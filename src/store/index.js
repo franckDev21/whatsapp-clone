@@ -4,7 +4,11 @@ export default createStore({
   state: {
     load : false,
     showBtn : true,
+    showCardBox : false,
     headerType : 'home',
+
+    cardBoxData : {},
+
     currentPage : {
       count : null,
       path : 'M 20 2 L 4 2 C 1.789063 2 0 3.789063 0 6 L 0 16 C 0 18.210938 1.789063 20 4 20 L 19.5 20 L 24 23 L 24 6 C 24 3.789063 22.210938 2 20 2 Z M 20 16 L 11 16 L 11 14 L 20 14 Z M 20 12 L 4 12 L 4 10 L 20 10 Z M 20 8 L 4 8 L 4 6 L 20 6 Z ',
@@ -12,6 +16,7 @@ export default createStore({
         {name : "Nouveau groupe",url: "/"}
       ]
     },
+
     pageInfos : {
       disc : {
         count : null,
@@ -35,6 +40,7 @@ export default createStore({
         ]
       }
     },
+
     chats : [
       {
         name : "Ariana",
@@ -62,6 +68,7 @@ export default createStore({
         time : "12:20"
       },
     ],
+
     allMessage : [
       {
         name : "Ariana 😍", 
@@ -125,13 +132,17 @@ export default createStore({
     SET_LOAD : (state,value) => state.load = value,
     SET_CURRENT_PAGE : (state,value) => state.currentPage = state.pageInfos[value],
     SET_HEADER_TYPE: (state,type) => state.headerType = type,
-    SET_SHOW_BTN : (state,type) => state.showBtn = type
+    SET_SHOW_BTN : (state,type) => state.showBtn = type,
+    SET_SHOW_CARD_BOX : (state,value) => state.showCardBox = value,
+    SET_CARD_BOX_DATA : (state,data) => state.cardBoxData = data
   },
   actions: {
     setLoad : ({commit},value) => commit('SET_LOAD',value),
     setCurrentPage : ({commit},name) => commit('SET_CURRENT_PAGE',name),
     setHeaderType : ({commit},type)=> commit('SET_HEADER_TYPE',type),
-    setShowBtn : ({commit},type) => commit('SET_SHOW_BTN',type)
+    setShowBtn : ({commit},type) => commit('SET_SHOW_BTN',type),
+    setShowCardBox : ({commit},value) => commit('SET_SHOW_CARD_BOX',value),
+    setCardBoxData : ({commit},data) => commit('SET_CARD_BOX_DATA',data)
   },
   getters: {
     currentPage : state => state.currentPage,
@@ -139,7 +150,9 @@ export default createStore({
     headerType : state => state.headerType,
     chats : state => state.chats,
     allMessage : state => state.allMessage,
-    showBtn : state => state.showBtn
+    showBtn : state => state.showBtn,
+    cardBoxData : state => state.cardBoxData,
+    showCardBox : state => state.showCardBox
   },
   modules: {
   }

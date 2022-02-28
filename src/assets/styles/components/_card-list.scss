@@ -1,0 +1,63 @@
+.card-list{
+  // background-color: aqua;
+  display: flex;
+  align-items: center;
+  
+  &__img{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    & > img{
+      position: absolute;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    
+    &--border{
+      border: .4rem dashed lighten($color: $colour-primary, $amount: 15);
+    }
+    &--border-1{
+      border: .39rem solid lighten($color: $colour-primary, $amount: 15);
+    }
+    &--border-vue{
+      border : .39rem solid #eee;
+    }
+  }
+
+  &__right{
+    // background-color: antiquewhite;
+    margin-left: 1rem;
+    width: calc(100% - 6rem);
+    position: relative;
+    & > img{
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg) ;
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+
+  &__name{
+    position: relative;
+    top: 0.1rem;
+    font-size: 1.8rem;
+    color: lighten($color: $colour-back-1, $amount: 15);
+    font-weight: 600;
+  }
+
+  &__date{
+    font-size: 1.4rem;
+    position: relative;
+    bottom: .3rem;
+    color: lighten($color: $colour-back-2, $amount: 20);
+  }
+
+}

@@ -5,11 +5,16 @@
     </template>
     <template #content >
       <div class="content">
+
         <router-view/>
+        <!-- CardBox -->
+        <CardBox  :data="cardBoxData" v-if="showCardBox" />
+
       </div>
     </template>
     <template #button-static >
       <Circle v-if="showBtn" /> 
+      <CirclePen />
     </template>
   </layout>
 </template>
@@ -20,14 +25,19 @@ import { mapGetters } from 'vuex'
 import Layout from './components/Layout.vue'
 import Header from './components/Header.vue'
 import Circle from './components/Circle.vue'
+import CardBox from './components/CardBox.vue'
+import CirclePen from './components/CirclePen.vue'
+
 
 export default {
   components : {
     Layout,
     Header,
-    Circle
+    Circle,
+    CardBox,
+    CirclePen
   },
-  computed : mapGetters(['showBtn'])
+  computed : mapGetters(['showBtn','showCardBox','cardBoxData'])
 }
 </script>
 

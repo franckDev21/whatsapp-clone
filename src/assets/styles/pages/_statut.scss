@@ -1,0 +1,12 @@
+.statut{
+  &__list-title{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  &__list{
+    .card-list{
+      margin-bottom: 1.7rem;
+    }
+  }
+}

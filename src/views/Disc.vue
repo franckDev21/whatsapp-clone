@@ -1,9 +1,10 @@
 <template>
   <div class="disc">
     <!-- vue welcome -->
-    <Welcome v-if="show && !load" />
+    <Welcome v-if="whatsAppShow && !load" />
     <!-- content -->
-    <ChatList v-for="(msg,i) in allMessage" :key="i" :message="msg"  />
+    <ChatList @show-box="showCard" v-for="(msg,i) in allMessage" :key="i" :message="msg"  />
+
   </div>
 </template>
 
@@ -18,7 +19,7 @@ export default {
   name: 'Disc',
   data(){
     return {
-      show : true
+      whatsAppShow : true,
     }
   },
   components: {
@@ -33,19 +34,34 @@ export default {
     setTimeout(()=>{
       this.setLoad(true)
     },7000);
+
     this.setCurrentPage('disc')
+
     this.setShowBtn(true)
   },
   computed: {
     ...mapGetters(['load','allMessage'])
   },
   methods: {
-    ...mapActions(['setLoad','setCurrentPage','setHeaderType','setShowBtn']),
+    ...mapActions([
+        'setLoad',
+        'setCurrentPage',
+        'setHeaderType',
+        'setShowBtn',
+        'setCardBoxData',
+        'setShowCardBox'
+      ]),
+    
     hiddenWelcome(){
       setTimeout(()=>{
-        this.show = false
+        this.whatsAppShow = false
       },6000);
-    }
+    },
+
+    showCard(message){
+      this.setCardBoxData(message)
+      this.setShowCardBox(true)
+    },
   }
 }
 </script>

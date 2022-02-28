@@ -7,6 +7,7 @@
 @import "./base/typography";
 
 // components
+@import "./components/layout";
 @import "./components/buttons";
 @import "./components/welcome";
 @import "./components/header";
@@ -14,6 +15,8 @@
 @import "./components/content";
 @import "./components/circle";
 @import "./components/card-box";
+@import "./components/card-list";
+@import "./components/circle-pen";
 
 // layouts
 @import "./layout/header";
@@ -22,3 +25,4 @@
 // pages
 @import "./pages/disc";
 @import "./pages/message";
+@import "./pages/statut";
