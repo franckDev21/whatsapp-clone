@@ -16,7 +16,7 @@
 
       <CardList 
         title = "Joyce"
-        url   = "https://img.nrj.fr/4tlIxJY07ymsgvc6fCB_YT7tNdA=/800x450/smart/medias%2F2020%2F10%2Fderulo_5f91b1167ea67.jpg"
+        url   = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn_rc9vTSjWvGVp3saA3GYv-CbxrzkaGWLog&usqp=CAU"
         date  = "Ajoud'hui a 00:10"
         type  = "status" />
 
@@ -34,7 +34,7 @@
 
       <CardList 
         title = "Djatsa Dev"
-        url   = "https://img.nrj.fr/4tlIxJY07ymsgvc6fCB_YT7tNdA=/800x450/smart/medias%2F2020%2F10%2Fderulo_5f91b1167ea67.jpg"
+        url   = "https://img.igen.fr/2016/6/macgpic-1465713146-44350573818694-sc-jpt.jpg"
         date  = "Hier à 14:05"
         type  = "status" />
 
@@ -48,7 +48,7 @@
     <div class="statut__list">
       <CardList 
         title = "Mandikou Ami Dev"
-        url   = "https://img.nrj.fr/4tlIxJY07ymsgvc6fCB_YT7tNdA=/800x450/smart/medias%2F2020%2F10%2Fderulo_5f91b1167ea67.jpg"
+        url   = "https://i.pinimg.com/originals/3c/65/f1/3c65f1046fa7e54afe0a72e834dac405.jpg"
         date  = "Hier à 21:45"
         type  = "status-vue" />
     </div>
@@ -69,9 +69,10 @@ export default {
   mounted(){
     this.setCurrentPage('statut');
     this.setShowBtnPen(true);
+    this.setShowBtn(true);
   },
   methods: {
-    ...mapActions(['setCurrentPage','setShowBtnPen'])
+    ...mapActions(['setCurrentPage','setShowBtnPen','setShowBtn'])
   },
 }
 </script>

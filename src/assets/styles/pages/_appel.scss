@@ -1,0 +1,12 @@
+.appel{
+  &__list{
+    padding: 0 1rem;
+    & .card-list{
+      margin: 1.7rem 0;
+    }
+
+    & .card-list:last-of-type{
+      margin-bottom: 5rem;
+    }
+  }
+}

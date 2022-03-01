@@ -2,7 +2,7 @@
   // background-color: aqua;
   display: flex;
   align-items: center;
-  
+
   &__img{
     width: 5rem;
     height: 5rem;
@@ -28,6 +28,7 @@
     &--border-vue{
       border : .39rem solid #eee;
     }
+
   }
 
   &__right{
@@ -43,6 +44,20 @@
       width: 3.2rem;
       height: 3.2rem;
     }
+
+    & .phone{
+      position: absolute;
+      width: 2.4rem;
+      height: 2.4rem;
+      transform: translateY(-50%)  rotate(10deg);
+    }
+
+    & .video{
+      position: absolute;
+      width: 2.4rem;
+      height: 2.4rem;
+      transform: translateY(-50%)  rotate(0);
+    }
   }
 
   &__name{
@@ -51,13 +66,24 @@
     font-size: 1.8rem;
     color: lighten($color: $colour-back-1, $amount: 15);
     font-weight: 600;
+
   }
 
   &__date{
+    display: flex;
+    align-items: center;
     font-size: 1.4rem;
     position: relative;
     bottom: .3rem;
+    font-weight: 400;
     color: lighten($color: $colour-back-2, $amount: 20);
+    span{
+      margin-left: .7rem;
+      display: inline-block;
+    }
+    svg{
+      margin-right: 0.2rem;
+    }
   }
 
 }
